@@ -17,7 +17,7 @@ node -v
 
 ※ プロンプトは省略しました
 
-### Homebrewがインストールされてないる場合、Installerを利用
+### Homebrewがインストールされていない場合、Installerを利用
 
 https://nodejs.org/ja/  から「最新版」をダウンロードしインストール
 
