@@ -1,12 +1,8 @@
-# インストール手順 Mac編
+# Instllation process for macOS
 
-対象OS: macOS 10.12以降
+## 2-4 Install Node.js
 
-## 2-4 Node.js のインストール
-
-### Homebrewがインストールされている場合
-
-バージョン番号はどんどん上がるので一致してなくて良いです
+### If Homebrew installed
 
 ```shell
 brew -v
@@ -15,23 +11,19 @@ brew install nodejs
 node -v
 ```
 
-※ プロンプトは省略しました
 
-### Homebrewがインストールされていない場合、Installerを利用
+### If Homebrew is't installed
 
-https://nodejs.org/ja/  から「最新版」をダウンロードしインストール
-
-インストール後ターミナルでバージョンを確認、バージョン番号はどんどん上がるので一致してなくて良いです
+Download and install latest version from https://nodejs.org/ja/
 
 ```shell
 node -v
 ```
 
-※ プロンプトは省略しました
 
-## 2-6 インストール用プロジェクトの作成
+## 2-6 Create a project for installation
 
-* プロジェクトの作成
+* Create a project.
 
 ```shell
 mkdir hello_react
@@ -39,9 +31,8 @@ cd hello_react
 npm init -y
 ```
 
-※ プロンプトは省略しました
 
-* package.jsonの変更
+* Change a package.json file.
 
 ```json
 {
@@ -60,7 +51,7 @@ npm init -y
 }
 ```
 
-## 2-7 npmパッケージのインストール
+## 2-7 Install node packages
 
 ```shell
 npm install react react-dom
@@ -70,33 +61,25 @@ npm install eslint babel-eslint eslint-loader eslint-plugin-react --save-dev
 npm install css-loader style-loader babel-loader --save-dev
 ```
 
-※ プロンプトは省略しました
 
+## 2-8 Create sample code
 
-## 2-8 確認用Reactコードの作成
-
-* ディレクトリー作成
+* Make directories.
 
 ```shell
 mkdir src
 mkdir public
 ```
 
-※ プロンプトは省略しました
 
-
-* .babelrc
-
-ファイル名は . (ドット)から始まるので注意して下さい
+* Create a .babelrc file.
 
 ```json
 {
   "presets": ["@babel/preset-env", "@babel/preset-react"]
 }
 ```
-* .eslintrc.json
-
-ファイル名は . (ドット)から始まるので注意して下さい
+* Create a .eslintrc.json file.
 
 ```json
 {
@@ -124,7 +107,7 @@ mkdir public
   }
 }
 ```
-* webpack.config.js
+* Create a webpack.config.js file.
 
 ```js
 module.exports = {
@@ -160,7 +143,7 @@ module.exports = {
 };
 ```
 
-* public/index.html
+* Create a public/index.html file.
 
 ```html
 <!DOCTYPE html>
@@ -177,7 +160,8 @@ module.exports = {
 </body>
 </html>
 ```
-* src/index.js
+
+* Create a src/index.js file.
 
 ```js
 import React from 'react'
@@ -189,12 +173,10 @@ ReactDOM.render(
 )
 ```
 
-*  確認
+*  Check
 
 ```shell
 npm start
 ```
 
-※ プロンプトは省略しました
-
-ターミナルに `webpack: Compiled successfully.` が表示されたら ブラウザーで  `http://localhost:8080` をアクセス
+If you see this message `webpack: Compiled successfully.` in the terminal, try access `http://localhost:8080` .
