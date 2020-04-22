@@ -4,7 +4,7 @@
 
 ## 開発環境の構築
 
-* [インストール手順 Mac](docs/install_mac.md)
+* [Installation process for macOS](docs/install_mac.md)
 * [インストール手順 Windows](docs/install_win.md)
 
 ## コード
