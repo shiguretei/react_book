@@ -12,7 +12,7 @@ node -v
 ```
 
 
-### If Homebrew is't installed
+### If Homebrew isn't installed
 
 Download and install latest version from https://nodejs.org/ja/
 
